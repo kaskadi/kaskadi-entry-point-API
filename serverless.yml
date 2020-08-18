@@ -32,5 +32,3 @@ provider:
     type: http
 functions:
   Serve: ${file(./lambdas/serve/serverless.yml)}
-layers:
-  ApiLayer: ${file(./layer/serverless.yml)}

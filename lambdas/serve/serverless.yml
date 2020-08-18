@@ -1,7 +1,5 @@
 handler: lambdas/serve/serve.handler
 name: serve
-layers:
-  - { Ref: ApiLayerLambdaLayer }
 package:
   include:
     - lambdas/serve/serve.js
