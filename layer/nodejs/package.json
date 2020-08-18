@@ -1,7 +1,7 @@
 {
-  "name": "template-kaskadi-api-layer",
+  "name": "kaskadi-entry-point-api-layer",
   "version": "1.0.0",
-  "description": "Layer for template-kaskadi-api",
+  "description": "Layer for kaskadi-entry-point-api",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
