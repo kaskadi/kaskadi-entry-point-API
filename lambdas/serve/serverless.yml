@@ -1,0 +1,16 @@
+handler: lambdas/serve/serve.handler
+name: serve
+package:
+  include:
+    - lambdas/serve/serve.js
+events:
+  # attach the function to the root of the API...
+  - http:
+      path: /
+      method: get
+      cors: true
+  # and to all subsequent paths
+  - http:
+      path: /{proxy+}
+      method: get
+      cors: true

@@ -19,3 +19,6 @@ jobs:
       run: npm i
     - name: Test
       run: npm test
+      env:
+        CFD_PUBLIC_DOMAIN: ${{ secrets.CFD_PUBLIC_DOMAIN }}
+        APP_VERSION: ${{ secrets.APP_VERSION }}
