@@ -30,5 +30,8 @@ provider:
     service: ${self:service.name}
     logical-unit: entry-point
     type: http
+  environment:
+    CFD_PUBLIC_DOMAIN: ${env:CFD_PUBLIC_DOMAIN}
+    APP_VERSION: ${env:APP_VERSION}
 functions:
   Serve: ${file(./lambdas/serve/serverless.yml)}
