@@ -9,8 +9,20 @@ events:
       path: /
       method: get
       cors: true
+      kaskadi-docs:
+        description: This endpoint returns the required HTML content to start the Kaskadi application.
+        queryStringParameters:
+          - key: host
+            description: Hosting server for all apps/assets.
+            default: Kaskadi public CDN
   # and to all subsequent paths
   - http:
       path: /{proxy+}
       method: get
       cors: true
+      kaskadi-docs:
+        description: This endpoint returns the required HTML content to start the Kaskadi application.
+        queryStringParameters:
+          - key: host
+            description: Hosting server for all apps/assets.
+            default: Kaskadi public CDN
