@@ -2,7 +2,17 @@ module.exports.handler = async (event) => {
   // retrieve host from query string if defined (meaning we are reaching this endpoint from a test environment)
   const requestHost = event.queryStringParameters ? event.queryStringParameters.host : undefined
   const host = requestHost ? `http://${requestHost}` : process.env.CFD_PUBLIC_DOMAIN
-  const index = `<head>
+  return {
+    statusCode: 200,
+    headers: {
+      'content-type': 'text/html'
+    },
+    body: getIndex(host)
+  }
+}
+
+function getIndex (host) {
+  return `<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kaskadi app</title>
@@ -20,11 +30,4 @@ module.exports.handler = async (event) => {
 <body>
   <kaskadi-app appVersion="${process.env.APP_VERSION}"></kaskadi-app>
 </body>`
-  return {
-    statusCode: 200,
-    headers: {
-      'content-type': 'text/html'
-    },
-    body: index
-  }
 }
