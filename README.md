@@ -78,7 +78,8 @@ Headers:
   content-type: text/html
 
 Body:
-  <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Kaskadi app</title>\n  <link rel=\"icon\" type=\"image/png\" href=\"https://cdn.klimapartner.net/imgs/icons/favicon.png\">\n  <script type=\"module\" src=\"https://cdn.klimapartner.net/modules/@kaskadi/kaskadi-apps/kaskadi-app.js\"></script>\n  <style>\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n    font-size: 16px;\n  }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion=\"1.0.0\"></kaskadi-app>\n</body>
+  <head>
+    <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>Kaskadi app</title>\n  <link rel="icon" type="image/png" href="https://cdn.klimapartner.net/imgs/icons/favicon.png">\n  <script type="module" src="https://cdn.klimapartner.net/modules/@kaskadi/kaskadi-apps/kaskadi-app.js"></script>\n  <style>\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n    font-size: 16px;\n  }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion="1.0.0"></kaskadi-app>\n</body>
 ```
 </details>
 
@@ -102,7 +103,8 @@ Headers:
   content-type: text/html
 
 Body:
-  <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Kaskadi app</title>\n  <link rel=\"icon\" type=\"image/png\" href=\"http://localhost:3000/imgs/icons/favicon.png\">\n  <script type=\"module\" src=\"http://localhost:3000/modules/@kaskadi/kaskadi-apps/kaskadi-app.js\"></script>\n  <style>\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n    font-size: 16px;\n  }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion=\"1.0.0\"></kaskadi-app>\n</body>
+  <head>
+    <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>Kaskadi app</title>\n  <link rel="icon" type="image/png" href="http://localhost:3000/imgs/icons/favicon.png">\n  <script type="module" src="http://localhost:3000/modules/@kaskadi/kaskadi-apps/kaskadi-app.js"></script>\n  <style>\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n    font-size: 16px;\n  }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion="1.0.0"></kaskadi-app>\n</body>
 ```
 </details>
 
@@ -153,7 +155,8 @@ Headers:
   content-type: text/html
 
 Body:
-  <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Kaskadi app</title>\n  <link rel=\"icon\" type=\"image/png\" href=\"https://cdn.klimapartner.net/imgs/icons/favicon.png\">\n  <script type=\"module\" src=\"https://cdn.klimapartner.net/modules/@kaskadi/kaskadi-apps/kaskadi-app.js\"></script>\n  <style>\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n    font-size: 16px;\n  }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion=\"1.0.0\"></kaskadi-app>\n</body>
+  <head>
+    <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>Kaskadi app</title>\n  <link rel="icon" type="image/png" href="https://cdn.klimapartner.net/imgs/icons/favicon.png">\n  <script type="module" src="https://cdn.klimapartner.net/modules/@kaskadi/kaskadi-apps/kaskadi-app.js"></script>\n  <style>\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n    font-size: 16px;\n  }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion="1.0.0"></kaskadi-app>\n</body>
 ```
 </details>
 
@@ -177,7 +180,8 @@ Headers:
   content-type: text/html
 
 Body:
-  <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Kaskadi app</title>\n  <link rel=\"icon\" type=\"image/png\" href=\"http://localhost:3000/imgs/icons/favicon.png\">\n  <script type=\"module\" src=\"http://localhost:3000/modules/@kaskadi/kaskadi-apps/kaskadi-app.js\"></script>\n  <style>\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n    font-size: 16px;\n  }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion=\"1.0.0\"></kaskadi-app>\n</body>
+  <head>
+    <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>Kaskadi app</title>\n  <link rel="icon" type="image/png" href="http://localhost:3000/imgs/icons/favicon.png">\n  <script type="module" src="http://localhost:3000/modules/@kaskadi/kaskadi-apps/kaskadi-app.js"></script>\n  <style>\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n    font-size: 16px;\n  }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion="1.0.0"></kaskadi-app>\n</body>
 ```
 </details>
 
