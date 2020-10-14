@@ -25,20 +25,26 @@
 <!-- automatically generated documentation will be placed in here -->
 # API endpoints
 
+The origin and root path for this API is: `https://erp.klimapartner.net`
+
 The following endpoints are defined in this API:
 - [/](#/)
+- [/{proxy+}](#/{proxy+})
 
-## `/` (target lambda → [serve](#serve)) <a name="/"></a>
+## `/` <a name="/"></a>
 
 Supported methods:
-- [GET](#GET)
-- [GET](#GET)
+- [GET](#/-GET)
 
-### `GET`
+### `GET` (target lambda → [serve](#serve)) <a name="/-GET"></a>
 
 **Description:**
 
 This endpoint returns the required HTML content to start the Kaskadi application.
+
+**Authorization:**
+
+No authorizer found for this method.
 
 **Query string parameters:**
 
@@ -50,17 +56,70 @@ This endpoint returns the required HTML content to start the Kaskadi application
 
 No body found for this method.
 
-_Example request:_
+**Examples:**
+
+<details>
+<summary>Example #1</summary>
+
+_Request:_
 
 ```HTTP
-GET /?host=host_value
+GET https://erp.klimapartner.net/
 ```
 
-### `GET`
+_Response:_
+
+```HTTP
+Status code:
+  200
+
+Headers:
+  Access-Control-Allow-Origin: *
+  content-type: text/html
+
+Body:
+  <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Kaskadi app</title>\n  <link rel=\"icon\" type=\"image/png\" href=\"https://cdn.klimapartner.net/imgs/icons/favicon.png\">\n  <script type=\"module\" src=\"https://cdn.klimapartner.net/modules/@kaskadi/kaskadi-apps/kaskadi-app.js\"></script>\n  <style>\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n    font-size: 16px;\n  }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion=\"1.0.0\"></kaskadi-app>\n</body>
+```
+</details>
+
+<details>
+<summary>Example #2</summary>
+
+_Request:_
+
+```HTTP
+GET https://erp.klimapartner.net/?host=localhost:3000
+```
+
+_Response:_
+
+```HTTP
+Status code:
+  200
+
+Headers:
+  Access-Control-Allow-Origin: *
+  content-type: text/html
+
+Body:
+  <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Kaskadi app</title>\n  <link rel=\"icon\" type=\"image/png\" href=\"http://localhost:3000/imgs/icons/favicon.png\">\n  <script type=\"module\" src=\"http://localhost:3000/modules/@kaskadi/kaskadi-apps/kaskadi-app.js\"></script>\n  <style>\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n    font-size: 16px;\n  }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion=\"1.0.0\"></kaskadi-app>\n</body>
+```
+</details>
+
+## `/{proxy+}` <a name="/{proxy+}"></a>
+
+Supported methods:
+- [GET](#/{proxy+}-GET)
+
+### `GET` (target lambda → [serve](#serve)) <a name="/{proxy+}-GET"></a>
 
 **Description:**
 
 This endpoint returns the required HTML content to start the Kaskadi application.
+
+**Authorization:**
+
+No authorizer found for this method.
 
 **Query string parameters:**
 
@@ -72,11 +131,55 @@ This endpoint returns the required HTML content to start the Kaskadi application
 
 No body found for this method.
 
-_Example request:_
+**Examples:**
+
+<details>
+<summary>Example #1</summary>
+
+_Request:_
 
 ```HTTP
-GET /?host=host_value
+GET https://erp.klimapartner.net/{proxy+}
 ```
+
+_Response:_
+
+```HTTP
+Status code:
+  200
+
+Headers:
+  Access-Control-Allow-Origin: *
+  content-type: text/html
+
+Body:
+  <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Kaskadi app</title>\n  <link rel=\"icon\" type=\"image/png\" href=\"https://cdn.klimapartner.net/imgs/icons/favicon.png\">\n  <script type=\"module\" src=\"https://cdn.klimapartner.net/modules/@kaskadi/kaskadi-apps/kaskadi-app.js\"></script>\n  <style>\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n    font-size: 16px;\n  }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion=\"1.0.0\"></kaskadi-app>\n</body>
+```
+</details>
+
+<details>
+<summary>Example #2</summary>
+
+_Request:_
+
+```HTTP
+GET https://erp.klimapartner.net/{proxy+}?host=localhost:3000
+```
+
+_Response:_
+
+```HTTP
+Status code:
+  200
+
+Headers:
+  Access-Control-Allow-Origin: *
+  content-type: text/html
+
+Body:
+  <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Kaskadi app</title>\n  <link rel=\"icon\" type=\"image/png\" href=\"http://localhost:3000/imgs/icons/favicon.png\">\n  <script type=\"module\" src=\"http://localhost:3000/modules/@kaskadi/kaskadi-apps/kaskadi-app.js\"></script>\n  <style>\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n    font-size: 16px;\n  }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion=\"1.0.0\"></kaskadi-app>\n</body>
+```
+</details>
 
 # API resources
 
