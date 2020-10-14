@@ -8,6 +8,8 @@ plugins:
   - serverless-aws-documentation
   - serverless-offline
 custom:
+  kaskadi-docs:
+    hostname: erp.klimapartner.net
   documentation:
     api:
       info:
