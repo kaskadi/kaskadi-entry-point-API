@@ -173,7 +173,7 @@ No body found for this method.
 _Request:_
 
 ```HTTP
-GET https://erp.klimapartner.net/{proxy+}
+GET https://erp.klimapartner.net/we_can_type_anything_here
 ```
 
 _Response:_
@@ -214,7 +214,7 @@ Body:
 _Request:_
 
 ```HTTP
-GET https://erp.klimapartner.net/{proxy+}?host=localhost:3000
+GET https://erp.klimapartner.net/we_really_can_type_anything_here?host=localhost:3000
 ```
 
 _Response:_
