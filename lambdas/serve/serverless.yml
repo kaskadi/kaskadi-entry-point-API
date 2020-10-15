@@ -44,7 +44,9 @@ events:
             description: Hosting server for all apps/assets.
             default: Kaskadi public CDN
         examples:
-          - request: {}
+          - request:
+              pathParameters:
+                proxy+: we_can_type_anything_here
             response:
               statusCode: 200
               headers:
@@ -52,6 +54,8 @@ events:
                 'content-type': 'text/html'
               body: '<head>\n  <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>Kaskadi app</title>\n  <link rel="icon" type="image/png" href="https://cdn.klimapartner.net/imgs/icons/favicon.png">\n  <script type="module" src="https://cdn.klimapartner.net/modules/@kaskadi/kaskadi-apps/kaskadi-app.js"></script>\n  <style>\n    html, body {\n      margin: 0;\n      padding: 0;\n      font-family: sans-serif;\n      font-size: 16px;\n    }\n  </style>\n</head>\n<body>\n  <kaskadi-app appVersion="1.0.0"></kaskadi-app>\n</body>'
           - request:
+              pathParameters:
+                proxy+: we_really_can_type_anything_here
               queryStringParameters:
                 host: localhost:3000
             response:
