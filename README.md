@@ -260,9 +260,9 @@ _no layer defined in the [configuration file](./serverless.yml)._
 
 ## serve <a name="serve"></a>
 
-|  Name | Sources                             | Timeout |               Handler               |
-| :---: | :---------------------------------- | :-----: | :---------------------------------: |
-| serve | <ul><li>HTTP</li><li>HTTP</li></ul> | default | [handler](./lambdas/serve/serve.js) |
+|  Name | Sources                                         | Timeout |               Handler               |
+| :---: | :---------------------------------------------- | :-----: | :---------------------------------: |
+| serve | <ul><li>HTTP (GET)</li><li>HTTP (GET)</li></ul> | default | [handler](./lambdas/serve/serve.js) |
 
 See [configuration file](./serverless.yml) for more details.
 
