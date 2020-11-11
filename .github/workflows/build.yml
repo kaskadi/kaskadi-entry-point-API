@@ -8,7 +8,6 @@ on:
     types: [opened, reopened, edited, synchronize]
     paths:
       - 'lambdas/**'
-      - 'layer/**'
       - 'test/**'
       - 'package.json'
 env:
