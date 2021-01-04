@@ -1,3 +1,4 @@
+// force deploy
 module.exports.handler = async (event) => {
   // retrieve host from query string if defined (meaning we are reaching this endpoint from a test environment)
   const requestHost = event.queryStringParameters ? event.queryStringParameters.host : undefined
